@@ -1,4 +1,4 @@
-name-Gaurav Rai -healthcare
+name-Gaurav Rai -healthcare,depura,thank you,crousel,
 name-ravishek Singh -login/signup,crousel
 name-Rakesh Ahire -order medcine
 name-Gaurav Kumar -lab test & RTPCR
