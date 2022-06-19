@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        form{
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #top{
+            background-color: #10847e;
+            height: 100px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        h3{
+            margin-left: 40px;
+            margin-bottom: 20px;
+            font-weight: 600px;
+        }
+        input{
+            margin-left: 40px;
+            margin-bottom: 30px;
+            width: 390px;
+            padding: 15px;
+            color: grey;
+            border-radius: 10px;
+            border-color:grey;
+            border-style: solid;
+            font-size: 15px;
+        }
+        #sub{
+            margin-left: 40px;
+            margin-bottom: 20px;
+            width: 425px;
+            padding: 15px;
+            background-color: #10847e;
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            border-color:transparent;
+           
+        }
+        p{
+            margin-left: 40px; 
+            font-size: 14px;
+            color: grey;
+        }
+        span{
+            color: #10847e;
+            font-size: 14px;
+        }
+        #top>img{
+            width: 200px;
+            margin: auto;
+            display: block;
+        }
+        #top>img+img{
+            width: 120px;
+            margin: auto;
+            display: block;
+        }
+        #num{
+            color: red;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+         }
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <div id="top">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" alt="">
+            
+           
+        </div>
+        
+            <h3 id="header"></h3>
+            <input id="otp" type="number" placeholder="enter your 4 digits OTP">
+            <br>
+            <p id="num"></p>
+            <br>
+            <input   id="sub" type="submit"  value="Continue" >
+           
+            <p>By clicking continue, you agree with our <span>Privacy Policy</span> </p>
+        
+       
+    </form>
+    
+</body>
+</html>
+
+<script>
+    let currentPhoneData=JSON.parse(localStorage.getItem("currphoneData")) || [];
+
+    document.querySelector("form").addEventListener("submit",myOTP);
+
+    let display=document.querySelector("#header");
+
+    let customerNumber=currentPhoneData[0].phoneNumber;
+
+    display.innerText="Enter OTP sent to +91 "+customerNumber;
+
+    function myOTP(event){
+        event.preventDefault();
+        
+        let otp=document.querySelector("#otp").value;
+
+        if(otp!=1234){
+            document.querySelector("#num").innerText="The otp entered is incorrect";
+        }
+       
+        // else{
+        // window.location.href="homepage.html";
+        // }
+        
+    }
+    
+
+</script>

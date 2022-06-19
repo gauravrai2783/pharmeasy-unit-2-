@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .carousel{
+            width: 100%;
+            position: relative;
+        }
+        .carousel>img{
+            width: 100%;
+        }
+        .carousel>button{
+            position: absolute;
+            top: 40%;
+            background-color: transparent;
+            border-radius: 100%;
+            border-color: transparent;
+            font-size: 50px;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+
+           
+        }
+        .carousel>button:nth-child(2){
+            left: 10px;
+        }
+        .carousel>button:nth-child(3){
+            right: 10px;
+        }
+    </style>
+</head>
+<body onload="slider()">
+    <div class="carousel">
+        <img id="slideImg" src="https://cms-contents.pharmeasy.in/banner/0a08bc09b92-MEGA20_Dweb.jpg?dim=1440x0&dpr=1&q=100" alt="">
+        <button>&#60;</button>
+        <button>&#62;</button>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    
+    let imgArray=[
+        "https://cms-contents.pharmeasy.in/banner/0a08bc09b92-MEGA20_Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/a16798e4a2f-Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/5aeebb1a134-Dweb2.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/b287e359a6f-Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/374ed4b3c4e-Liveasy_diabetic_Dweb.jpg?dim=1440x0&dpr=1&q=100"
+    ]
+
+    let slideImg=document.querySelector("#slideImg");
+
+    let len=imgArray.length;
+
+    let i=0;
+
+    function slider(){
+        if(i>len-1){
+            i=0;
+        }
+        slideImg.src=imgArray[i];
+        i++;
+        setTimeout('slider()',1000);
+    }
+
+
+    let img=document.querySelector("#slideImg");
+
+    let buttons=document.querySelectorAll("button");
+
+    let imgNum=0;
+
+   
+    buttons[0].addEventListener("click",function(){
+   if(imgNum===0){
+    imgNum=imgArray.length-1;
+   }
+   else{
+    imgNum--;
+   }
+   img.setAttribute("src",imgArray[imgNum]);
+  })
+
+  buttons[1].addEventListener("click",function(){
+   if(imgNum===imgArray.length-1){
+    imgNum=0;
+   }
+   else{
+    imgNum++;
+   }
+   img.setAttribute("src",imgArray[imgNum]);
+  })
+</script>
