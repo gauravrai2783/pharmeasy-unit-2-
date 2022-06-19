@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pharmeasy HomePage</title>
+    
+    <style>
+        /* copied */
+form {
+            width: 100%;
+            /* margin: auto; */
+            /* margin-top: 50px; */
+            /* margin-right: 100px; */
+            /* display: flex; */
+        }
+
+        #top {
+            width: 100%;
+            background-color: #10847e;
+            /* height: 100px; */
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h3 {
+            /* margin-left: 40px; */
+            margin-bottom: 20px;
+            font-weight: 600px;
+        }
+
+        input {
+            /* margin-left: 40px; */
+            margin-bottom: 30px;
+            width: 100%;
+            padding: 15px;
+            color: grey;
+            border-radius: 10px;
+            border-color: grey;
+            border-style: solid;
+            font-size: 15px;
+        }
+
+        #sub {
+            width: 100%;
+            /* margin-left: 40px; */
+            margin-bottom: 20px;
+            /* width: 425px; */
+            /* padding: 15px; */
+            background-color: #10847e;
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            border-color: transparent;
+            /* margin: auto; */
+
+        }
+
+        p {
+            /* margin-left: 40px; */
+            font-size: 14px;
+            color: grey;
+        }
+
+        span {
+            color: #10847e;
+            font-size: 14px;
+        }
+
+        #top>img {
+            width: 200px;
+            margin: auto;
+            display: block;
+        }
+
+        #top>img+img {
+            width: 120px;
+            margin: auto;
+            display: block;
+        }
+
+        #num {
+            color: red;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        #d2{
+            width: 80%;
+            margin: auto;
+        }
+        #phone{
+
+        }
+/* popup */
+        .form-popup {
+            width: 30%;
+            display: none;
+            position: fixed;
+            /* bottom: 0; */
+            top: 10px;
+            right: 30px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            /* margin-bottom: 100px; */
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            width: 100%;
+            height: 800px;
+            /* padding: 10px; */
+            background-color: white;
+        }
+
+        /* popupEnd */
+        .btncancel{
+/* margin-left: -200px; */
+padding: 20px;
+/* display: none; */
+background-color: teal;
+color: white;
+/* padding-top: 2px; */
+        }
+
+        #top{
+            background-color: teal;
+        }
+/* copyEnd */
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 150px;
+            background-color: #10847e;
+            display: flex;
+            
+        }
+        .container>div:nth-child(1){
+            width: 15%;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .container>div:nth-child(2){
+            width: 60%;
+            height: 50px;
+            margin-top: 20px;
+            margin-left: 30px;
+            border-radius: 5px;
+            background-color: white;
+            display: flex;
+           
+        }
+        .container>div:nth-child(1)>a>img{
+            width: 85%;
+        }
+        .container>div:nth-child(2)>h3{
+         margin-top: 13px;
+         margin-left: 15px;
+         color: #108486;
+         font-size: 18px;
+        }
+        .container>div:nth-child(2)>select{
+            border: 0px;
+            color: #8897a2;
+            
+        }
+        .container>div:nth-child(2)>p{
+            color: #dfe3e6;
+            margin-top: 11px;
+            font-size: 22px;
+            margin-left: 10px;
+        }
+        .container>div:nth-child(2)>h3:nth-last-child(1){
+            color: #8f99a2;
+        }
+        .container>div:nth-child(3){
+            width: 36%;
+            height: 80px;
+            margin-top: 80px;
+            margin-left: -790px;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            color: white;
+            font-size: 18px;
+        }
+        .container>div:nth-child(3)>p:nth-child(4)>a{
+            width: 5%;
+            height: 20px;
+            margin-left: -1px;
+        }
+        .container>div:nth-child(4){
+            width: 27%;
+            height: 50px;
+            margin-top: 100px;
+            margin-left: 250px;
+            display: flex;
+            color: white;
+            font-size: 18px;
+            justify-content: space-evenly;
+        }
+        .container>div:nth-child(4)>div:nth-child(1){
+            width: 25%;
+            height: 100px;
+            margin-left: -40px;
+
+        }
+           .container>div:nth-child(4)>div:nth-child(1)>p{
+            margin-left: 35px;
+            margin-top: -27px;
+           }
+           .container>div:nth-child(4)>div:nth-child(2){
+            width: 40%;
+            height: 100px;
+            margin-left: -20px;
+           }
+           .container>div:nth-child(4)>div:nth-child(2)>p{
+            margin-left: 35px;
+            margin-top: -27px;
+           
+           }
+           .container>div:nth-child(4)>div:nth-child(3){
+            width: 25%;
+            height: 100px;
+
+
+        }
+        .container>div:nth-child(4)>div:nth-child(3)>p{
+          margin-left: 40px;
+          margin-top: -27px;
+           
+           }
+           .container+div{
+            width: 97%;
+            height: 220px;
+             position: relative;
+             top: -230px;
+            margin: auto;
+            margin-top: 500px;
+            display: flex;
+            justify-content: space-between;
+
+           }
+           .container+div>div{
+            width: 32%;
+            height: 150px;
+           }
+           .container+div>div:nth-child(2)>img{
+            margin-top: -4px;
+            border-radius: 5px;
+           
+           }
+           .container+div>div>img{
+            width: 100%;
+           margin-left: -1px;
+           }
+           .container+div>div:nth-child(1)>img{
+           border-radius: 5px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+           }
+           .container1{
+            width: 97%;
+            height: 80px;
+            position: relative;
+            top: -260px;
+            margin: auto;
+            margin-top: 70px;
+            background-color: #ab9dfa;
+            border-radius: 5px;
+            display: flex;
+           }
+           .container1>div:nth-child(1){
+            width: 20%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+           }
+           .container1>div:nth-child(1)>img:nth-child(1){
+            width: 80%;
+           }
+           .container1>div:nth-child(2){
+            width: 45%;
+            height: 50px;
+            margin-top: 23px;
+            margin-left: 70px;
+           }
+           .container1>div:nth-child(2)>p{
+            font-size: 21px;
+            color: white;
+           }
+           .container1>div:nth-child(3){
+            width: 20%;
+            height: 50px;
+            margin-top: 23px;
+            margin-left: 100px;
+           }
+           .container1>div:nth-child(3)>img{
+            width: 50%;
+            margin-top: -50px;
+            margin-left: 150px;
+           }
+           .container1+div{
+            width: 97%;
+            height: 50px;
+            position: relative;
+            top: -250px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+           }
+           .container1+div>div{
+            width: 30%;
+            height: 50px;
+            display: flex;
+
+           }
+           .container1+div>div:nth-child(1)>img{
+            display: block;
+            height: 40px;
+            width: 10%;
+
+           }
+           .container1+div>div:nth-child(1)>h3{
+            margin-top: 10px;
+            margin-left: 15px;
+            font-size: 21px;
+            color: #4f585e;
+           }
+           .container1+div>div:nth-child(2)>h3{
+            font-size: 20px;
+            margin-top: 10px;
+            color: #45847e;
+           }
+           .carousel{
+            width: 100%;
+            margin-top: -970px;
+            position: relative;
+        }
+        .carousel>img{
+            width: 100%;
+        }
+        .carousel>button{
+            position: absolute;
+            top: 40%;
+            background-color: transparent;
+            border-radius: 100%;
+            border-color: transparent;
+            font-size: 50px;
+            color: #ffffff;
+            width: 50px;
+            height: 50px;
+
+           
+        }
+        .carousel>button:nth-child(2){
+            left: 10px;
+        }
+        .carousel>button:nth-child(3){
+            right: 10px;
+        }
+        .container+div>div>p:nth-child(4){
+            display: block;
+            width: 10%;
+            height: 100px;
+            border: 1px solid red;
+        }
+        #cl:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="slider()">
+    <div class="container">
+        <div>
+            <a href="index.html"><img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75" alt="error"></a>
+        </div>
+        <div>
+            <h3>Select Pincode</h3>
+            <select></select>
+            <p>|</p>
+            <h3>Search medicines/Healthcare products</h3>
+           
+        </div>
+        
+
+    
+            <div>
+            <p><a href="ordermedicine.html"  style="text-decoration: none; color: white;">Order Medicines</a></p>
+            <p><a href="healthcare.html" style="text-decoration: none; color: white;">Healthcare Products</a></p>
+            <p><a href="lab-test.html" style="text-decoration: none; color: white;">Lab Tests</a></p>
+            <p><a href="rtpcr.html" style="text-decoration: none; color: white;">RTPCR</a></p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt="error">
+                    <p style="text-decoration: none; color: white;">Offers</p>
+                </div>
+         <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="error">
+            <p id="cl" onclick="openForm()" style="text-decoration: none; color: white;">Login /Signup</p>
+        
+            <!-- copied -->
+                     <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+                     
+                    
+                    <div class="form-popup" id="myForm">
+                        <div>
+                            <button type="button" class="btncancel" onclick="closeForm()">X</button>
+                        </div>
+                        
+                        <form class="form-container" action="">
+                
+                            <div id="top">
+                                <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+                                <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" alt="">
+                
+                
+                            </div>
+                
+                            <div id="d2">
+                            <h3>Quick Login / Register</h3>
+                            <input id="phone" type="number" placeholder="Enter your phone number">
+                            <br>
+                            <p id="num"></p>
+                            <br>
+                 <input id="sub" onclick="openForm()" type="submit" value="Continue">
+                
+                            
+                            <p>By clicking continue, you agree with our <span>Privacy Policy</span> </p>
+                
+                         </div>
+                            
+                
+                        </form>
+                        
+                    </div>
+                    
+            
+            <!-- copy end--> 
+           
+            <!-- copy end--> 
+            <!-- <p><a href="login.html" style="text-decoration: none; color: white;">Login /Signup</a></p> -->
+            
+        </div>
+            <div> <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg">
+                <p><a href="cart.html" style="text-decoration: none; color: white;" >Cart</a></p>
+            </div>
+           
+            </div>
+    </div>
+     
+    <div>
+        <div>
+            <img src="img2.png">
+        </div>
+
+        <div>
+            <img src="img3.PNG">
+        </div>
+        <div>
+            <img src="img4.PNG">
+        </div>
+    </div>
+    <div class="container1">
+     <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/e3db129c.png">
+     </div>
+     <div>
+        <p>Save flat 5% extra on medicines & enjoy FREE delivery with PLUS membership</p>
+     </div>
+     <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/b20b0932.png">
+     </div>
+    </div>
+    <div> <div>
+        <img src="https://assets.pharmeasy.in/web-assets/dist/67890676.svg">
+        <h3>Offers Just For You</h3>
+    </div>
+    <div>
+        <h3>See All Offers</h3></div>
+        
+    </div></div>
+   
+    <div class="carousel">
+        <img id="slideImg" src="https://cms-contents.pharmeasy.in/banner/0a08bc09b92-MEGA20_Dweb.jpg?dim=1440x0&dpr=1&q=100" alt="">
+        <button>&#60;</button>
+        <button>&#62;</button>
+    </div>
+</body>
+</html>
+<script>
+    
+    
+    let imgArray=[
+        "https://cms-contents.pharmeasy.in/banner/0a08bc09b92-MEGA20_Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/a16798e4a2f-Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/5aeebb1a134-Dweb2.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/b287e359a6f-Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/374ed4b3c4e-Liveasy_diabetic_Dweb.jpg?dim=1440x0&dpr=1&q=100"
+    ]
+
+    let slideImg=document.querySelector("#slideImg");
+
+    let len=imgArray.length;
+
+    let i=0;
+
+    function slider(){
+        if(i>len-1){
+            i=0;
+        }
+        slideImg.src=imgArray[i];
+        i++;
+        setTimeout('slider()',1000);
+    }
+
+
+    let img=document.querySelector("#slideImg");
+
+    let buttons=document.querySelectorAll("button");
+
+    let imgNum=0;
+
+   
+    buttons[0].addEventListener("click",function(){
+   if(imgNum===0){
+    imgNum=imgArray.length-1;
+   }
+   else{
+    imgNum--;
+   }
+   img.setAttribute("src",imgArray[imgNum]);
+  })
+
+  buttons[1].addEventListener("click",function(){
+   if(imgNum===imgArray.length-1){
+    imgNum=0;
+   }
+   else{
+    imgNum++;
+   }
+   img.setAttribute("src",imgArray[imgNum]);
+  })
+  document.querySelector("form").addEventListener("submit", myLogin);
+  document.querySelector("#sub").addEventListener("submit",openForm);
+
+let currentPhoneData = JSON.parse(localStorage.getItem("currphoneData")) || [];
+
+let mainPhoneData = JSON.parse(localStorage.getItem("mnphoneData")) || [];
+  function myLogin(event) {
+        event.preventDefault();
+
+        let currentPhoneData = [];
+
+        let phonenum = document.querySelector("#phone").value;
+
+
+        if (phonenum.length < 10 || phonenum.length > 10) {
+            document.querySelector("#num").innerText = "Enter a valid mobile number";
+        }
+
+        else {
+            let objPhone = {
+                phoneNumber: document.querySelector("#phone").value
+            };
+            currentPhoneData.push(objPhone);
+            localStorage.setItem("currphoneData", JSON.stringify(currentPhoneData));
+
+                 window.location.href="otp.html";
+              
+                document.querySelector("p>#cl").innerText="User";
+        }
+    }
+  
+  // copied
+function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        document.querySelector(".btncancel").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        document.querySelector(".btncancel").style.display = "none";
+    }
+    
+</script>
