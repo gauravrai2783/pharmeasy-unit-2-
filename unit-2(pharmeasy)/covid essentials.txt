@@ -1,0 +1,58 @@
+{img:https://cdn01.pharmeasy.in/dam/products_otc/266249/depura-60000-iu-vitamin-d3-oral-solution-helps-bones-healthy-aids-in-boosting-immunity-sugarfree-1-1654077819.jpg
+
+name:Depura, 60000 Iu Vitamin D3 Oral Solution,Helps Bones Healthy, Aids In Boosting Immunity, Sugarfree
+
+MRP:71.24
+
+id:covid},
+
+{img:https://cdn01.pharmeasy.in/dam/products_otc/I40124/dettol-antiseptic-liquid-bottle-of-1-l-2-1654166347.jpg
+
+name:Dettol Antiseptic Liquid Bottle Of 1 L
+
+MRP:298.27
+id:covid},
+
+{img:https://cdn01.pharmeasy.in/dam/products_otc/Q83701/pharmeasy-all-in-one-vaporizer-1-1654233812.jpg
+
+name:Pharmeasy All-In -One Vaporizer
+
+MRP:539.1
+id:covid},
+
+{img:https://cdn01.pharmeasy.in/dam/products_otc/181140/vicks-vaporub-50ml-relief-from-cold-cough-headache-and-body-pain-2-1654078748.jpg
+
+name:Vicks Vaporub 50ml, Relief From Cold, Cough, Headache And Body Pain
+
+MRP:130.5
+id:covid},
+
+{img:https://cdn01.pharmeasy.in/dam/products_otc/O26428/savlon-surface-disinfectant-spray-170g-2-1654234199.jpg
+
+name:Savlon Surface Disinfectant Spray 170g
+
+MRP:140.25
+id:covid},
+
+{img:https://cdn01.pharmeasy.in/dam/products_otc/I40123/dettol-antiseptic-liquid-bottle-of-60-ml-2-1654166360.jpg
+
+name:Dettol Antiseptic Liquid Bottle Of 60 Ml
+
+MRP:29.94
+id:covid},
+
+
+{img:https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-pack-of-60-2-1655210117.jpg
+
+name:Pharmeasy Multivitamin Multimineral - Pack Of 60
+
+MRP:629.1
+id:covid},
+
+
+{img:https://cdn01.pharmeasy.in/dam/products_otc/T60720/pharmeasy-multivitamin-multimineral-pack-of-60-2-1655210117.jpg
+
+name:Pharmeasy Multivitamin Multimineral - Pack Of 60
+
+MRP:629.1
+id:covid},

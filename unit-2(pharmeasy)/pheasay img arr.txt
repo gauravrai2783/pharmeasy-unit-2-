@@ -1,0 +1,21 @@
+       "https://cms-contents.pharmeasy.in/banner/ea0bf711eed-Vicks-cb-may.jpg?dim=700x0&dpr=1&q=100",
+        
+        "https://cms-contents.pharmeasy.in/banner/8aa83ea6c7e-Moov-June-Coupon.jpg",
+        
+        "https://cms-contents.pharmeasy.in/banner/627c570ceec-Plum-M-M.jpg",
+        
+        "https://cms-contents.pharmeasy.in/banner/de6cc279933-Upakarma-CB-june.jpg",
+        
+        "https://cms-contents.pharmeasy.in/banner/3ab35ad135a-Cremaffin-June-SRP.jpg",
+        
+        "https://cms-contents.pharmeasy.in/banner/0c2c1348a87-OneTouch-CB-June22.png",
+        
+        "https://cms-contents.pharmeasy.in/banner/7076307845f-Johnson-CB-Mar22.jpg",
+        
+        "https://cms-contents.pharmeasy.in/banner/26d88c347d7-Colgate-Diab.jpg",
+       
+        "https://cms-contents.pharmeasy.in/banner/e13fa8363bf-EQUAL-JUNE-CB.png",
+        
+        "https://cms-contents.pharmeasy.in/banner/5d4b67a22d1-Khadi-CB-June.jpg",
+        
+       "https://cms-contents.pharmeasy.in/banner/8ca693dc787-B-CB.jpg",

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #nav>img {
+            width: 1600px;
+        }
+
+        #pay {
+            /* border: 1px solid red; */
+            width: 60%;
+            /* margin-left: 200px; */
+        }
+        #price{
+            /* border: 1px solid black; */
+            width: 30%;
+            height: 150px;
+           /* margin-left: 1000px;
+           margin-top: -700px; */
+           margin-top: 100px;
+        }
+        #price>h2{
+            margin-top: 20px;
+            color:#3f3c3bd1
+        }
+        #price>p{
+            margin-top: 10px;
+            color:#aca7a5
+        }
+        #price>h3{
+            color:#aca7a5
+        }
+        #payB{
+            /* margin-left: -10px; */
+            width:100%;
+            height: 50px;
+            background-color: teal;
+            color: white;
+            border: transparent;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        #main{
+            width: 70%;
+            margin: auto;
+            display: flex;
+        }
+        #payB:hover{
+            cursor: pointer;
+            background-color: rgb(14, 79, 79);
+        }
+        .cart-value{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <img src="nav.png" alt="">
+    </div>
+    <div id="main">
+        <div  id="pay">
+            <img src="pay.png" alt="">
+        </div>
+    
+        <div id="price">
+            <h3>Price Breakdown</h3>
+            <div class="cart-value">
+                <p>Cart Value</p>
+                <p id="total">1234</p>
+            </div>
+            <div class="cart-value">
+                <p >Delivery Charge</p>
+                <p>80</p>
+            </div>
+            
+            <h2>Amount to be paid</h2>
+    
+            <button id="payB">Place Order</button>
+    
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
+<script>
+let button=document.querySelector("#payB")
+button.addEventListener("click",function(){
+    alert("order placed")
+    window.location.href="succesfull.html"
+})
+</script>
