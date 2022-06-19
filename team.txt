@@ -1,0 +1,7 @@
+name-Gaurav Rai -healthcare
+name-ravishek Singh -login/signup,crousel
+name-Rakesh Ahire -order medcine
+name-Gaurav Kumar -lab test & RTPCR
+name-Divyank Mishra -homepage
+name-Guru Raj- network issue
+
