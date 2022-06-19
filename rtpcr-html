@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rtpcr.css">
+
+    <script src="https://kit.fontawesome.com/a838936037.js" crossorigin="anonymous"></script>
+    <title>RTPCR</title>
+
+</head>
+
+<body>
+
+    <div class="containers">
+        <div>
+            <img src="https://pharmeasy.in/_next/image?url=%2Ficons%2Fpharmeasy-logo-white.png&w=256&q=75" alt="error">
+        </div>
+        <div>
+            <h3>Select Pincode</h3>
+            <select></select>
+            <p>|</p>
+            <h3>Search medicines/Healthcare products</h3>
+
+        </div>
+
+        <div>
+            <p>Order Medicines</p>
+            <p>Healthcare Products</p>
+            <p>Lab Tests</p>
+            <p>RTPCR</p>
+        </div>
+        <div>
+            <div>
+                <img src="https://assets.pharmeasy.in/web-assets/dist/275c07e1.svg" alt="error">
+                <p>Offers</p>
+            </div>
+
+            <div><img src="https://assets.pharmeasy.in/web-assets/dist/5eb42971.svg" alt="error">
+                <p>Login /Signup</p>
+            </div>
+
+
+            <div> <img src="https://assets.pharmeasy.in/web-assets/dist/21b0b5ba.svg">
+                <p>Cart</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="container">
+
+        <div id="lab-details">
+            <h1>Test Details</h1>
+        </div>
+
+
+        <div id="lab-info">
+            <div id="photo">
+                <div>
+                    <img src="https://assets.pharmeasy.in/web-assets/dist/6b3d644c.svg" alt="">
+                </div>
+
+                <div>
+                    <h3>Covid-19 RTPCR (Coronavirus SARS - CoV2)</h3>
+                    <h5>Available at 1 certified lab</h5>
+                    <h2>RS 700</h2>
+                    <p>onwards</p>
+
+                    <button>Select</button>
+                </div>
+            </div>
+
+
+            <div>
+                <p>Please select a test to proceed</p>
+                <div>
+                    <h3>View Cart</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="description">
+        <h3>Description</h3>
+        <p>"The COVID-19 laboratory test can detect positive coronavirus cases. Any individual with symptoms like cough,
+            high fever, shortness of breath, respiratory and breathing difficulties, and with a history of international
+            travel or contact with Covid -19 positive cases, can book this test with prior consultation by General
+            Physician.
+            The result of this test will be informed to the relevant authorities as mandated by the government.
+
+            Home sample collection will be done by an expert technician."</p>
+    </div>
+
+
+    <div id="offers">
+
+
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/9407515b.svg?dim=0x72&dpr=2&q=100" alt="">
+
+            <h5>Trusted Labs</h5>
+            <p>Every test booked via PharmEasy is conducted by certified labs that are 100% verified and trustworthy.
+            </p>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/0105ddc1.svg?dim=0x72&dpr=2&q=100" alt="">
+
+            <h5>Home Visit</h5>
+            <p>With PharmEasy, you get a FREE sample pick-up* by professional phlebotomists from your home or preferred
+                location.</p>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fc71c500.svg?dim=0x72&dpr=2&q=100" alt="">
+
+            <h5>Timely and Accurate Reports</h5>
+            <p>Once collected, samples will be sent to labs for processing. Detailed reports will be shared within a
+                stipulated timeline.</p>
+        </div>
+
+
+        <div>
+            <img src="https://assets.pharmeasy.in/web-assets/dist/4a11ac5a.svg?dim=0x72&dpr=2&q=100" alt="">
+
+            <h5>Up to 70% OFF</h5>
+
+            <p>At PharmEasy, you save at every step! On diagnostic tests, get up to 70% OFF on various tests and test
+                packages.</p>
+        </div>
+
+
+    </div>
+
+    <div id="download">
+
+        <p>Download the App for Free</p>
+
+        <!-- <i class="fa-brands fa-google-play"></i> -->
+        <div>
+
+            <div>
+
+                <a href="https://play.google.com/store/games?hl=en&gl=US" target="_blank"><i
+                        class="fa-brands fa-google-play fa-2x"></i></a>
+                <p>Google Play</p>
+            </div>
+
+
+            <div>
+
+                <a href="https://www.apple.com/in/app-store/" target="_blank">
+                    <i class="fa-brands fa-apple fa-2x"></i>
+                </a>
+
+                <p>App Store</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="footer">
+
+        <div id="upper">
+
+            <div>
+                <h3>Company</h3>
+                <a href="https://pharmeasy.in/about-us" target="_blank">About Us</a>
+
+                <a href="https://pharmeasy.in/careers/">Careers</a>
+
+                <a href="https://pharmeasy.in/blog/">Blog</a>
+
+                <a href="https://manch.pharmeasy.in/PharmEasyPartner.html">Partner with PharmEasy</a>
+
+                <a href="https://pharmeasy.typeform.com/to/whj0JOdy">Sell at PharmEasy</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Our services</h3>
+
+                <a href="https://pharmeasy.in/online-medicine-order">Order Medicine</a>
+
+                <a href="https://pharmeasy.in/health-care">Healthcare Products</a>
+
+
+                <a href="https://pharmeasy.in/diagnostics">Lab Tests</a>
+
+                <a href="">Find Nearest Collection Centre</a>
+
+                <br> <br>
+
+                <h3>Need Help</h3>
+
+                <a href="https://pharmeasy.in/online-medicine-order/browse">Browse All Medicines</a>
+
+                <a href="https://pharmeasy.in/molecules">Browse All Molecules</a>
+
+                <a href="https://pharmeasy.in/online-medicine-order/browse/areas">Browse All Cities & Areas</a>
+
+                <a href="https://pharmeasy.in/help">FAQ</a>
+            </div>
+
+
+            <div>
+
+                <h3>Policy Info</h3>
+
+                <a href="https://pharmeasy.in/legal/editorial-policy">Editorial Policy</a>
+
+                <a href="https://pharmeasy.in/legal/privacy-policy">Privacy Policy</a>
+
+                <a href="https://pharmeasy.in/vulnerability-disclosure-policy">Vulnerability Disclosure Policy</a>
+
+                <a href="https://pharmeasy.in/legal/terms-and-conditions">Terms and Conditions</a>
+
+                <a href="https://pharmeasy.in/customer-support-policy">Customer Support Policy</a>
+
+                <a href="https://pharmeasy.in/return-policy">Return Policy</a>
+            </div>
+
+
+            <div>
+
+                <h3>FOLLOW US</h3>
+
+                <br>
+
+                <a href="https://www.instagram.com/pharmeasyapp/">
+                    <i class="fa-brands fa-instagram-square fa-2x"></i></a>
+
+                <a href="https://www.facebook.com/pharmeasy/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+
+                <a href="https://www.youtube.com/channel/UCDats_DLX-bGZH3-KGu8JhA"><i
+                        class="fa-brands fa-youtube fa-2x"></i></a>
+
+                <a href="https://twitter.com/pharmeasyapp/"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="lower">
+
+        <div>
+            <h3>
+                Our Payment Partners
+            </h3>
+        </div>
+
+        <div id="store">
+
+            <div id="icons">
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg" alt="">
+
+
+
+                <img src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg" alt="">
+
+
+            </div>
+
+            <div id="copyrights">
+
+                <div>
+                    <span>&copy 2022 PharmEasy. All Rights Reserved.</span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
