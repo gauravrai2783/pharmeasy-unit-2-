@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        form{
+            width: 500px;
+            margin: auto;
+            margin-top: 50px;
+        }
+        #top{
+            background-color: #10847e;
+            height: 100px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        h3{
+            margin-left: 40px;
+            margin-bottom: 20px;
+            font-weight: 600px;
+        }
+        input{
+            margin-left: 40px;
+            margin-bottom: 30px;
+            width: 390px;
+            padding: 15px;
+            color: grey;
+            border-radius: 10px;
+            border-color:grey;
+            border-style: solid;
+            font-size: 15px;
+        }
+        #sub{
+            margin-left: 40px;
+            margin-bottom: 20px;
+            width: 425px;
+            padding: 15px;
+            background-color: #10847e;
+            color: white;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            border-color:transparent;
+           
+        }
+        p{
+            margin-left: 40px; 
+            font-size: 14px;
+            color: grey;
+        }
+        span{
+            color: #10847e;
+            font-size: 14px;
+        }
+        #top>img{
+            width: 200px;
+            margin: auto;
+            display: block;
+        }
+        #top>img+img{
+            width: 120px;
+            margin: auto;
+            display: block;
+        }
+        #num{
+            color: red;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+         margin: 0;
+         }
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <div id="top">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg" alt="">
+            
+           
+        </div>
+        
+            <h3>Quick Login / Register</h3>
+            <input id="phone" type="number" placeholder="Enter your phone number">
+            <br>
+            <p id="num"></p>
+            <br>
+            <input   id="sub" type="submit"  value="Continue" >
+           
+            <p>By clicking continue, you agree with our <span>Privacy Policy</span> </p>
+        
+       
+    </form>
+    
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",myLogin);
+
+    let currentPhoneData=JSON.parse(localStorage.getItem("currphoneData")) || [];
+
+    let mainPhoneData=JSON.parse(localStorage.getItem("mnphoneData")) || [];
+    
+    function myLogin(event){
+        event.preventDefault();
+
+        let currentPhoneData=[];
+
+        let phonenum=document.querySelector("#phone").value;
+
+
+        if(phonenum.length<10 || phonenum.length>10){
+            document.querySelector("#num").innerText="Enter a valid mobile number";
+        }
+       
+       else{
+           let objPhone={
+            phoneNumber:document.querySelector("#phone").value
+           };
+        
+           currentPhoneData.push(objPhone);
+           localStorage.setItem("currphoneData",JSON.stringify(currentPhoneData));
+
+        //    mainPhoneData.push(objPhone);
+        //    localStorage.setItem("mnphoneData",JSON.stringify(mainPhoneData));
+            
+            window.location.href="otp.html";
+       }
+
+      
+        
+    }
+    
+
+</script>
